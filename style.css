@@ -1,0 +1,239 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #D9701E;
+    color: black;
+    font-family: 'Anton', sans-serif;
+    padding-top: 5px;
+}
+
+.logo{
+    color: white;
+    letter-spacing: 1px;
+    font-size: 2px;
+}
+
+.header-site a{
+    background-color: #D9701E;
+    border-color:#D36E1B;
+    border-style: double;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    padding-top: 5px;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 23px;
+    height: 3px;
+    background-color: white ;
+    margin-bottom: 4px;
+}
+
+@media screen and (max-width:1024px){
+    .nav-links{
+        width: 55%;
+    }
+}
+
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+    
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #D9701E;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        z-index: 1;
+        opacity: 97%;
+    }
+
+    .nav-links li{
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+    }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,5px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-5px);
+}
+
+
+
+
+.header-site{
+    background-image: url(images/LEAO.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color:white;
+    padding-top: 300px;
+    padding-bottom: 300px;
+    border-image-width: 100%;
+    z-index: 2;
+}
+
+.header-site h1{
+    font-family:'Anton', sans-serif;
+    letter-spacing: 2px;
+    font-size: 75px;
+}
+
+.content-site{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.content-site img{
+    margin-bottom: 15px;
+}
+
+.content-site h1{
+    color: #D9701E;
+    font-family:'Anton', sans-serif;
+}
+
+.content-site p .text-center{
+    color: white;
+    font-family: 'Questrial', sans-serif;;
+}
+
+.img-site{
+    background-image: url(images/cod.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: black;
+    padding-top: 300px;
+    padding-bottom: 300px;
+    border-image-width: 100%;
+}
+
+.footer-site{
+    padding-top: 50px;
+    color: white;
+    padding-bottom: 50px;
+}
+
+.content-site .img-thumbnail .border{
+    padding-top: 20px;
+    border-color:black;
+    border-width: 5px;
+}
+
+
+
+.footer-site a{
+    cursor: pointer;
+    text-emphasis: none;
+    color: white;
+}
+
+.img-site h1{
+    font-family: 'Anton', sans-serif;
+    color: white;
+}
+
+.img-site a{
+    background-color: #D9701E;
+    border-color:#D36E1B;
+}
+
+.upper-time{
+    background-image: url(images/COD-Mobile-Temporada-8.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color:white;
+    padding-top: 100px;
+    padding-bottom: 250px;
+    border-image-width: 100%;
+    z-index: 2;
+}
+
+.fundo-camps {
+    background-image: url(images/3682483-codm4.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color:white;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    border-image-width: 100%;
+    z-index: 2;
+}
+
+@media screen and (max-width:768px){
+    #carousel .img{
+        width: 50%;
+        height: 50%;
+    }
+}
+
