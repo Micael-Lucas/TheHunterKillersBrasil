@@ -125,21 +125,20 @@ nav{
 
 .header-site{
     background-image: url(images/LEAO.jpg);
-    background-position: center top;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     color:white;
     padding-top: 300px;
     padding-bottom: 300px;
-    border-image-width: 100%;
     z-index: 2;
 }
 
 .header-site h1{
     font-family:'Anton', sans-serif;
     letter-spacing: 2px;
-    font-size: 75px;
+    font-size: 60px;
 }
 
 .content-site{
