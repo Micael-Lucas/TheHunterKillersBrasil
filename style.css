@@ -235,3 +235,15 @@ nav{
     }
 }
 
+.regras{
+    background-image: url(images/REG.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    color: black;
+    padding-top:;
+    padding-bottom: 100px;
+    border-image-width: 100%;
+    width: 100%;
+    height: 100%;
