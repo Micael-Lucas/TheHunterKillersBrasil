@@ -4,7 +4,7 @@
  
  Todas as cores e fontes foram pensadas para criar uma interface simples e confortável para o usuário. Graças a responsividade implantada o mesmo pode ser visto em smartphones, tablets e etc.
  
- Como um primeiro projeto elaborado espero que gostem!
+ Como um primeiro projeto elaborado, espero que gostem!
  
  Atenciosamente,
  
